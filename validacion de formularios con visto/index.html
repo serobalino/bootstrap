@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+<title>Basic example - FormValidation</title>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FormValidation - The best jQuery validation plugin to validate form fields, support Bootstrap, Zurb Foundation, Pure, Semantic, UIKit frameworks">
+<meta name="keywords" content="FormValidation, BootstrapValidator, form validation, form validate, form validator, jQuery validation plugin, jquery validate plugin, jquery validator plugin, Zurb Foundation validation, Pure validation, SemanticUI validation, UIKit validation, Skeleton validation, Bootstrap, Zurb Foundation, Pure, SemanticUI, UIKit, Skeleton">
+<meta name="author" content="Nguyen Huu Phuoc">
+<meta name="google-site-verification" content="FMmr8kYuIuW27-qJLOb1Z59OgiVgKNgAv4_eMARhIY8">
+
+<meta name="twitter:site" content="@formvalidation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="FormValidation - The best jQuery validation plugin to validate form fields, support Bootstrap, Zurb Foundation, Pure, Semantic, UIKit frameworks">
+<meta name="twitter:title" content="Basic example - FormValidation">
+<meta name="twitter:image" content="http://formvalidation.io/asset/img/logo.png">
+
+<meta property="og:title" content="Basic example - FormValidation">
+<meta property="og:description" content="FormValidation - The best jQuery validation plugin to validate form fields, support Bootstrap, Zurb Foundation, Pure, Semantic, UIKit frameworks">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://formvalidation.io/download/tryit/bootstrap.html">
+<meta property="og:image" content="http://formvalidation.io/asset/img/logo.png">
+<meta property="og:site_name" content="FormValidation">
+
+<link rel="icon" type="image/x-icon" href="http://formvalidation.io/asset/img/favicon.ico">
+<link rel="stylesheet" href="Basic%20example%20-%20FormValidation%20Archivos/font-awesome.css">
+<link rel="stylesheet" href="Basic%20example%20-%20FormValidation%20Archivos/css.css">
+
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script src="Basic%20example%20-%20FormValidation%20Archivos/ga.js" async="" type="text/javascript"></script><script src="Basic%20example%20-%20FormValidation%20Archivos/jquery.js"></script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-44786951-2']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+    <link rel="stylesheet" href="Basic%20example%20-%20FormValidation%20Archivos/bootstrap.css">
+    <link rel="stylesheet" href="Basic%20example%20-%20FormValidation%20Archivos/formValidation.css">
+    <link rel="stylesheet" href="Basic%20example%20-%20FormValidation%20Archivos/demo.css">
+
+    <script src="Basic%20example%20-%20FormValidation%20Archivos/bootstrap.js"></script>
+    <script src="Basic%20example%20-%20FormValidation%20Archivos/formValidation.js"></script>
+    <script src="Basic%20example%20-%20FormValidation%20Archivos/bootstrap_002.js"></script>
+</head>
+<body class="demo-bootstrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" id="demoContainer">
+                <form novalidate="novalidate" id="basicBootstrapForm" class="form-horizontal fv-form fv-form-bootstrap"><button style="display: none; width: 0px; height: 0px;" class="fv-hidden-submit" type="submit"></button>
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Full name</label>
+        <div class="col-xs-4 has-feedback">
+            <input data-fv-field="firstName" class="form-control" name="firstName" placeholder="First name" type="text"><i data-fv-icon-for="firstName" class="form-control-feedback fv-icon-no-label" style="display: none;"></i>
+        <small data-fv-result="NOT_VALIDATED" data-fv-for="firstName" data-fv-validator="notEmpty" class="help-block" style="display: none;">The first name is required</small></div>
+        <div class="col-xs-4 has-feedback">
+            <input data-fv-field="lastName" class="form-control" name="lastName" placeholder="Last name" type="text"><i data-fv-icon-for="lastName" class="form-control-feedback fv-icon-no-label" style="display: none;"></i>
+        <small data-fv-result="NOT_VALIDATED" data-fv-for="lastName" data-fv-validator="notEmpty" class="help-block" style="display: none;">The last name is required</small></div>
+    </div>
+
+    <div class="form-group has-feedback">
+        <label class="col-xs-3 control-label">Username</label>
+        <div class="col-xs-5">
+            <input data-fv-field="username" class="form-control" name="username" type="text"><i data-fv-icon-for="username" class="form-control-feedback" style="display: none;"></i>
+        <small data-fv-result="NOT_VALIDATED" data-fv-for="username" data-fv-validator="notEmpty" class="help-block" style="display: none;">The username is required</small><small data-fv-result="NOT_VALIDATED" data-fv-for="username" data-fv-validator="stringLength" class="help-block" style="display: none;">The username must be more than 6 and less than 30 characters long</small><small data-fv-result="NOT_VALIDATED" data-fv-for="username" data-fv-validator="regexp" class="help-block" style="display: none;">The username can only consist of alphabetical, number, dot and underscore</small></div>
+    </div>
+
+    <div class="form-group has-feedback">
+        <label class="col-xs-3 control-label">Email address</label>
+        <div class="col-xs-5">
+            <input data-fv-field="email" class="form-control" name="email" type="text"><i data-fv-icon-for="email" class="form-control-feedback" style="display: none;"></i>
+        <small data-fv-result="NOT_VALIDATED" data-fv-for="email" data-fv-validator="notEmpty" class="help-block" style="display: none;">The email address is required</small><small data-fv-result="NOT_VALIDATED" data-fv-for="email" data-fv-validator="emailAddress" class="help-block" style="display: none;">The input is not a valid email address</small></div>
+    </div>
+
+    <div class="form-group has-feedback">
+        <label class="col-xs-3 control-label">Password</label>
+        <div class="col-xs-5">
+            <input data-fv-field="password" class="form-control" name="password" type="password"><i data-fv-icon-for="password" class="form-control-feedback" style="display: none;"></i>
+        <small data-fv-result="NOT_VALIDATED" data-fv-for="password" data-fv-validator="notEmpty" class="help-block" style="display: none;">The password is required</small><small data-fv-result="NOT_VALIDATED" data-fv-for="password" data-fv-validator="different" class="help-block" style="display: none;">The password cannot be the same as username</small></div>
+    </div>
+
+    <div class="form-group has-feedback">
+        <label class="col-xs-3 control-label">Gender</label>
+        <div class="col-xs-6">
+            <div class="radio">
+                <label>
+                    <input data-fv-field="gender" name="gender" value="male" type="radio"> Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input data-fv-field="gender" name="gender" value="female" type="radio"> Female
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input data-fv-field="gender" name="gender" value="other" type="radio"> Other
+                </label>
+            </div><i data-fv-icon-for="gender" class="form-control-feedback" style="display: none;"></i>
+        <small data-fv-result="NOT_VALIDATED" data-fv-for="gender" data-fv-validator="notEmpty" class="help-block" style="display: none;">The gender is required</small></div>
+    </div>
+
+    <div class="form-group has-feedback">
+        <label class="col-xs-3 control-label" id="captchaOperation">79 + 31 =</label>
+        <div class="col-xs-4">
+            <input data-fv-field="captcha" class="form-control" name="captcha" type="text"><i data-fv-icon-for="captcha" class="form-control-feedback" style="display: none;"></i>
+        <small data-fv-result="NOT_VALIDATED" data-fv-for="captcha" data-fv-validator="callback" class="help-block" style="display: none;">Wrong answer</small></div>
+    </div>
+
+    <div class="form-group has-feedback">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input data-fv-field="agree" name="agree" value="agree" type="checkbox"> Agree with the terms and conditions
+                </label>
+            </div><i data-fv-icon-for="agree" class="form-control-feedback" style="display: none;"></i>
+        <small data-fv-result="NOT_VALIDATED" data-fv-for="agree" data-fv-validator="notEmpty" class="help-block" style="display: none;">You must agree with the terms and conditions</small></div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-9 col-xs-offset-3">
+            <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Submit</button>
+        </div>
+    </div>
+</form>
+
+<script>
+$(document).ready(function() {
+    // Generate a simple captcha
+    function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+    $('#basicBootstrapForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            firstName: {
+                row: '.col-xs-4',
+                validators: {
+                    notEmpty: {
+                        message: 'The first name is required'
+                    }
+                }
+            },
+            lastName: {
+                row: '.col-xs-4',
+                validators: {
+                    notEmpty: {
+                        message: 'The last name is required'
+                    }
+                }
+            },
+            username: {
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9_\.]+$/,
+                        message: 'The username can only consist of alphabetical, number, dot and underscore'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email address is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'The password is required'
+                    },
+                    different: {
+                        field: 'username',
+                        message: 'The password cannot be the same as username'
+                    }
+                }
+            },
+            gender: {
+                validators: {
+                    notEmpty: {
+                        message: 'The gender is required'
+                    }
+                }
+            },
+            captcha: {
+                validators: {
+                    callback: {
+                        message: 'Wrong answer',
+                        callback: function(value, validator, $field) {
+                            var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                            return value == sum;
+                        }
+                    }
+                }
+            },
+            agree: {
+                validators: {
+                    notEmpty: {
+                        message: 'You must agree with the terms and conditions'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+            </div>
+        </div>
+    </div>
+
+<script>
+// You don't need to care about the following code
+// It's built for all demos
+$(document).ready(function() {
+    $('form').on('success.form.fv', function(e) {
+        e.preventDefault();
+    });
+
+    $(window).on('load', function() {
+        var $iframe = $(window.parent.document).find('iframe[src="/download/tryit/bootstrap.html"]');
+        if ($iframe.length) {
+            //$('body').addClass('demo-frame-body').find('.demo-ad').hide();
+
+            // Adjust the height of iframes containing the demo for specific frameworks
+            var $container = $('#demoContainer');
+            setTimeout(function() {
+                $iframe.height($container.height()).css('visibility', 'visible').fadeIn('fast');
+            }, 1000);
+
+            // Set the internal data to get it later if I want
+            $('body').data('iframe.fv', $iframe);
+
+            $container
+                .find('form')
+                .on('status.field.fv', function(e, data) {
+                    $iframe.height($container.height());
+                });
+        }
+    });
+});
+</script>
+
+</body></html>
